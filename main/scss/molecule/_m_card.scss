@@ -1,0 +1,27 @@
+.card {
+    border: 1px solid var(--clr-secondary-200);
+    padding: var(--spc-32);
+    
+    &.card-action {
+        background: var(--clr-naturals-100);
+        width: 498px;  
+        
+        & h6 > i {
+            color: var(--clr-primary-700) !important;
+            font-size: var(--text-base-size) !important;
+        }
+        
+    }
+    
+    &.card-media {
+        background: var(--clr-naturals-100);
+    }
+    
+    & p {
+        font-size: var(--text-base-size-xs);
+    }
+    
+    & a {
+        padding: 0 !important;
+    }
+}

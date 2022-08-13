@@ -1,0 +1,223 @@
+.btn {
+  text-transform: uppercase;
+  padding: var(--spc-12) var(--spc-16);
+  border-radius: var(--radius-0);
+  font-weight: var(--weight-medium);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  /*font-weight: var(--bs-body-font-weight);*/
+  font-size: var(--text-base-size);
+  /*padding: var(--space-xs) var(--space-sm);*/
+
+  &:hover {
+    color: var(--clr-default-900);
+  }
+
+    & i{
+        color: var(--clr-naturals-100);
+        font-size: var(--text-base-size-xs);
+        margin-left: var(--spc-2);
+    }
+
+  &.btn-default {
+    background: var(--clr-default-100);
+    color: var(--clr-secondary-300);
+    border-color: var(--clr-default-100);
+//    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  &.btn-primary {
+    background: var(--clr-primary-500);
+    color: var(--clr-naturals-100);
+    border-color: var(--clr-primary-500);
+//    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      background: var(--clr-primary-600);
+      border-color: var(--clr-primary-600);
+//      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+    }
+
+    &:focus {
+      background: var(--clr-primary-400);
+      border-color: var(--clr-primary-400);
+      box-shadow: none
+    }
+  }
+
+  &.btn-secondary {
+    background: var(--clr-secondary-500);
+    color: var(--clr-default-100);
+    border-color: var(--clr-secondary-500);
+//    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+      
+      &:hover {
+          background: var(--clr-secondary-300);
+          border-color: var(--clr-secondary-300);
+      }
+  }
+
+  &.btn-success {
+    background: var(--clr-success-400);
+    color: var(--clr-naturals-100);
+    border-color: var(--clr-success-400);
+//    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      background: var(--clr-success-500);
+      border-color: var(--clr-success-500);
+//      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    &:focus {
+      background: var(--clr-success-300);
+      border-color: var(--clr-success-300);
+      box-shadow: none
+    }
+  }
+
+  &.btn-outline {
+    background: none;
+    border-color: none;
+    color: var(--clr-primary-500);
+      
+    &:hover {
+      color: var(--clr-primary-400);
+    }
+      
+    & i {
+      color: var(--clr-primary-500);
+    }
+
+    &:focus {
+      border-color: var(--clr-default-500);
+      box-shadow: none
+    }
+  }
+    
+    &.btn-outline--light {
+        background: none;
+        border-color: none;
+        color: var(--clr-naturals-100);
+
+        &:hover {
+          color: var(--clr-naturals-100);
+        }
+
+        & i {
+          color: var(--clr-naturals-100);
+        }
+
+        &:focus {
+          border-color: var(--clr-default-500);
+          box-shadow: none
+        }
+    }
+    
+    &.btn-outline--dark {
+        background: none;
+        border-color: none;
+        color: var(--clr-secondary-400);
+
+        &:hover {
+          color: var(--clr-secondary-400);
+        }
+
+        & i {
+          color: var(--clr-secondary-400);
+        }
+
+        &:focus {
+          border-color: var(--clr-default-500);
+          box-shadow: none
+        }
+    }
+
+  &.btn-md {
+    font-size: var(--text-base-size-sm);
+    font-weight: var(--weight-semi-bold);
+
+    .icon {
+      font-size: calc(var(--spc-24) * 0.8);
+      position: relative;
+      top: var(--spc-2);
+      margin-right: var(--spc-8);
+    }
+  }
+
+  &.btn-sm {
+    padding: var(--spc-8) var(--spc-16);
+    font-size: var(--text-base-size-xs);
+    font-weight: var(--weight-semi-bold);
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:active:focus {
+    box-shadow: none;
+  }
+
+  &.btn-plain,
+  &.btn-plain:hover,
+  &.btn-plain:focus {
+    box-shadow: none;
+  }
+}
+
+.play {
+    border-radius: 100%;
+    
+    &.play1-layer1 {
+        padding: var(--spc-36) var(--spc-16);
+        border: 1px solid var(--clr-primary-500);
+        
+        & span.play1-layer2 {
+            padding: var(--spc-20);
+            background: var(--clr-primary-500);
+            border-radius: 100%;
+        }
+    }
+    
+    &.play2-layer1 {
+        padding: var(--spc-24) var(--spc-12);
+        background: rgba(247, 189, 53, 0.5);
+        
+        
+        & span.play2-layer2 {
+            padding: var(--spc-12);
+            background: var(--clr-primary-500);
+            border-radius: 100%;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

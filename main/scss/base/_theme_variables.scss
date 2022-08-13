@@ -1,0 +1,128 @@
+@import '_function';
+
+$text-base-size: 8;
+$text-base-size-md: rem(calc($text-base-size * 2));
+$text-base-size-sm: rem(calc($text-base-size * 1.75));
+$text-base-size-xs: rem(calc($text-base-size * 1.5));
+$text-base-size-xxs: rem(calc($text-base-size) * 1.3);
+
+/*$subtitle-lg: rem(calc($text-base-size * 3));
+$subtitle-sm: rem(calc($text-base-size * 2.25));
+$overline: rem($text-base-size * 1.25);*/
+
+$nput_height_lg: rem(64);
+$nput_height_md: rem(48);
+$nput_height_sm: rem(40);
+
+/*colours*/
+$colors: (
+  naturals:(100: #fff,
+    200: #000,
+  ),
+  default: (100: #F4F4F9,
+    200: #F2F2FF,
+    300: #EDEDFA,
+    400: #E6E6F2,
+    500: #D5D5EB,
+    600: #C1C1DE,
+    700: #ABABC4,
+    800: #9595AB,
+    900: #636377,
+  ),
+  primary: (100: #fff8e5,
+    200: #fce5ae,
+    300: #ffdc7c,
+    400: #FFCD48,
+    500: #F7BD35,
+    600: #ca9008,
+    700: #906706,
+    800: #735205,
+    900: #3a2902,
+  ),
+  secondary: (100: #eaebee,
+    200: #c0c4cb,
+    300: #959da9,
+    400: #6d7685,
+    500: #393E46,
+    600: #22252a,
+    700: #17191c,
+    800: #0b0c0e,
+    900: #0b0c0e,
+  ),
+  error: (100: #feeeef,
+    200: #facccf,
+    300: #f69a9f,
+    400: #e77776,
+  ),
+  success: (100: #f0f8f2,
+    200: #d3e8d7,
+    300: #B5DABD,
+    400: #98cba2,
+    500: #35C073,
+  ),
+  tinary: (100: #ffb700,
+  ),
+);
+
+/*spacers*/
+$theme-spacers: (
+  0:0,
+  2: rem(2),
+  4: rem(4),
+  8: rem(8),
+  10: rem(10),
+  12: rem(12),
+  16: rem(16),
+  20: rem(20),
+  24: rem(24),
+  28: rem(28),
+  32: rem(32),
+  36: rem(36),
+  40: rem(40),
+  48: rem(48),
+  56: rem(56),
+  64: rem(64),
+  72: rem(72),
+  148: rem(148)
+);
+
+/*title*/
+$title_font_size: (
+  0: rem(57),
+  d: rem(48),
+  1: rem(40),
+  2: rem(32),
+  3: rem(24),
+  4: rem(20),
+  5: rem(18),
+  6: rem(16)
+);
+
+$font-weight: (
+  bold:700,
+  semi-bold: 600,
+  medium: 500,
+  regular: 400
+);
+
+$border-radius: (
+  lg:rem(8),
+  md: rem(4),
+  sm: rem(2),
+  0: 0
+);
+
+
+$border: (
+  lg: rem(3),
+  md: solid rem(2) grey,
+  sm: solid rem(1) grey
+);
+
+
+$breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+);

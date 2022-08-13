@@ -1,0 +1,16 @@
+@import "../base/mixins";
+@import "../base/theme_variables";
+
+.template_default {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+    & a.btn-outline{
+        padding: 0;
+    }
+    
+    @include media-breakpoint-between(lg) {
+        height: auto;
+    }
+}

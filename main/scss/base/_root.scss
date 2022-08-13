@@ -1,0 +1,75 @@
+@use "_theme_variables" as *;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --font-base-stack: "Poppins", sans-serif;
+  --text-base-size: #{$text-base-size-md};
+  --text-base-size-sm: #{$text-base-size-sm};
+  --text-base-size-xs: #{$text-base-size-xs};
+  --text-base-size-xxs: #{$text-base-size-xxs};
+  --text-scale-ratio: 1.2;
+
+
+
+  /* font */
+  --h-line-height: 1.2;
+
+
+  /* form */
+  --input_height_lg: #{$nput_height_lg};
+  --input_height_sm: #{$nput_height_sm};
+
+  /* type scale */
+  /* --text-xs: calc(var(--text-base-size) / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+  --text-sm: calc(--text-base-size / var(--text-scale-ratio));
+  --text-md: calc(--text-base-size * var(--text-scale-ratio));
+  --text-lg: calc(--text-base-size * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl: calc(--text-base-size * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxl: calc(--text-base-size * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxxl: calc(--text-base-size * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+*/
+  /* colors */
+  @each $color,
+  $shades in $colors {
+
+    @each $shade,
+    $value in $shades {
+      --clr-#{$color}-#{$shade}: #{$value};
+    }
+  }
+
+  /* titles */
+  @each $titles,
+  $title_value in $title_font_size {
+    --title-#{$titles}: #{$title_value};
+  }
+
+  /* spacers */
+  @each $spacer,
+  $spacers_value in $theme-spacers {
+    --spc-#{$spacer}: #{$spacers_value};
+  }
+
+  /* font-weight */
+  @each $weight,
+  $weight_value in $font-weight {
+    --weight-#{$weight}: #{$weight_value};
+  }
+
+  /* border-radius */
+  @each $radius,
+  $radius_value in $border_radius {
+    --radius-#{$radius}: #{$radius_value};
+  }
+
+  --border-stock-color: var(--clr-default-500);
+
+      /* screen */
+    @each $breakpoint in $breakpoints {
+        --bp-#{$breakpoint}: #{$breakpoint};
+    }
+}
+
+
+
+

@@ -1,0 +1,230 @@
+@import "../base/mixins";
+
+.home_section1 {
+    padding-top: var(--spc-148);
+    padding: var(--spc-148) 0;
+    
+    & div.img-cont{
+        width: 514.93px;
+        height: 651px;
+        background: url("../images/video-img%201.jpg") no-repeat center center/cover;
+        
+        & span.play {
+            margin: 1rem;
+        }
+        
+        @include media-breakpoint-between(lg){
+            width: 100%;
+            height: 260px;
+        }
+    }
+    
+    @include media-breakpoint-between(lg){
+        padding-top: 0;
+        padding: var(--spc-20) 0;   
+    }
+    
+}
+
+.home_section2 {
+    background-color: var(--clr-secondary-100);
+    
+    & div.img-cont{
+        width: 340px;
+        height: 427px;
+        display: flex;
+        align-items: center;
+        
+        & h4{
+            color: var(--clr-naturals-100);
+            margin: var(--spc-148) 0;
+        }
+
+        & a{
+            margin: var(--spc-148) 0;
+        }
+        
+        & a.btn-outline--light{
+            padding: 0;
+        }
+        
+        &.img-cont1{
+            background: url("../images/video-img%201.jpg") no-repeat center center/cover;
+            padding: 1em;
+            
+        }
+        &.img-cont2{
+            background: url("../images/solar-bg-img.jpg") no-repeat;
+            
+            & div.data-cont{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                z-index: 1;
+                padding: 1em;
+            }
+            
+            & img{
+                width: 18rem;
+                position: absolute;
+            }
+            
+        }
+        
+    }
+    
+    & div.img-cont3{
+        height: 180px;
+        background: url("../images/solar-bg-img.jpg") no-repeat center center/cover;
+        
+        & img{
+            width: 256.89px;
+        }
+    }
+    
+    @include media-breakpoint-between(lg){
+         background-color: var(--clr-naturals-100);
+    }
+    
+    
+}
+
+.home_section3 {
+    background-color: var(--clr-secondary-100);
+    
+    & img{
+        width: 408px;
+    }
+    
+    @include media-breakpoint-between(lg){
+         background-color: var(--clr-naturals-100);
+    }
+}
+
+.home_section4 {
+    padding: var(--spc-72) 0;
+    
+    & h2.title {
+        color: var(--clr-primary-500);
+    }
+    
+    & h1.title {
+        color: var(--clr-primary-500);
+    }
+    
+    & span.icon-cont{
+        padding: var(--spc-24);
+        background-color: var(--clr-secondary-100);
+        border-radius: 100%;
+        
+         @include media-breakpoint-between(lg){
+             padding: var(--spc-12);
+        } 
+        
+        & svg{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    
+    & div.data-cont{
+        width: 400px;
+        
+        @include media-breakpoint-between(lg){
+            width: auto;
+        } 
+    }
+    
+    @include media-breakpoint-between(lg){
+         background-color: var(--clr-naturals-100);
+    }
+}
+
+.home_section5 {
+    
+    & div.img-cont {
+        width: 299px;
+        height: 432px;
+        background: url("../images/baker.jpg") no-repeat center center/cover;
+    
+        @include media-breakpoint-between(lg){
+        }
+    }
+    
+}
+
+
+
+.home_section6 {
+     
+    & img.img-partners{
+        width: 132px;
+    }
+}
+
+.home_section7 {
+    margin: 64px;
+    background: url("../images/bg-img-2.jpg") no-repeat center center/cover;
+    
+    & div.shade{        
+        
+        @include media-breakpoint-between(lg){
+            width: 100%;
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0,1));
+            position: absolute;
+            z-index: 1;
+        }
+    }
+    
+    & div.data-cont{
+        position: relative;
+        z-index: 2;
+        
+        @include media-breakpoint-between(lg){
+            padding-bottom: var(--spc-32);
+        }
+    }
+    
+    & h2, p {
+        color: var(--clr-naturals-100);
+    }
+
+    
+    @include media-breakpoint-between(lg){
+        margin: 0;
+        height: 60vh;
+    }
+}
+
+.home_section8 {
+    background: var(--clr-secondary-400);
+    
+    & h5 {
+        color: var(--clr-naturals-100);  
+    }
+    
+    & input{
+        width: 80%;
+        
+        @include media-breakpoint-between(lg){
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

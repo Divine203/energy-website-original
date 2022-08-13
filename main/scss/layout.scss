@@ -1,0 +1,21 @@
+//@use "mixins/_breakpoints.scss";
+
+@use "custom";
+@use "base/base";
+@use "base/typography";
+
+/*************atoms************/
+@use "atoms/a-index";
+
+
+/***********molecules**********/
+@use "molecule/m_index";
+
+/************templates************/
+@use "templates/t_index";
+
+/************organism***********/
+@use "organism/o_index";
+
+/************pages*************/
+@use "page/p_index";

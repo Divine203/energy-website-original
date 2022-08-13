@@ -1,0 +1,17 @@
+*[contenteditable=true] {
+    border: solid 1px var(--clr-default-500);
+    color: var(--clr-default-900);
+    border-radius: var(--radius-md);
+    padding: var(--spc-4);
+
+    &:hover {
+        border-color: var(--clr-primary-300);
+    }
+
+    &:focus-visible,
+    &:focus {
+        border-color: var(--clr-primary-400);
+        outline-color: var(--clr-naturals-100);
+        box-shadow: 0 0 0 0.19rem var(--clr-primary-200);
+    }
+}

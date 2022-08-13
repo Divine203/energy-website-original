@@ -1,0 +1,11 @@
+@use "sass:math";
+
+/********************pixel to rem*********************/
+@function rem($pixels, $context: 16) {
+    @return (math.div($pixels, $context)) * 1rem;
+}
+
+/********************nagative value*********************/
+@function neg($val) {
+    @return calc(var(#{$val}) * -1)
+}

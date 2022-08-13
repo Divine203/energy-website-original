@@ -1,0 +1,106 @@
+@use "root";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+  font-size: 16px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+  }
+
+  /*@include media-breakpoint-down(sm) {
+    font-size: 13px;
+  }*/
+
+  body {
+    font-family: var(--font-base-stack);
+    font-size: var(--text-base-size);
+    background: var(--clr-naturals-100);
+
+    ::selection {
+      color: var(--clr-naturals-100);
+      background: var(--clr-primary-500);
+    }
+
+    a {
+      text-decoration: none;
+      position: relative;
+      color: var(--clr-primary-500);
+
+      &:hover {
+        color: var(--clr-primary-600);
+      }
+
+      &:focus {
+        color: var(--clr-primary-300);
+      }
+    }
+
+    p {
+      color: var(--clr-default-900);
+
+      a {
+        &:after {
+          position: absolute;
+          left: 0;
+          right: 100%;
+          content: "";
+          border: solid 1px var(--clr-primary-600);
+          top: 101%;
+          opacity: 0;
+          transition: all 0.2s ease-in-out;
+        }
+
+
+        &:hover:after {
+          right: 0;
+          opacity: 1;
+        }
+      }
+    }
+
+    hr {
+      background-color: var(--clr-default-400);
+      vopacity: 1;
+
+      &.lg {
+        height: 4px;
+      }
+        
+    }
+      
+    hr.bg-dark{
+        border-top: 1px solid var(--clr-naturals-200) !important;
+    }
+
+    .hr-divider.horizontal {
+      height: 100%;
+      width: 1px;
+      background: var(--clr-default-500);
+    }
+
+    .hr-divider {
+      border-left: solid 1px var(--clr-default-400);
+    }
+
+    .bg-primary {
+      background-color: var(--clr-primary-600) !important;
+    }
+
+    .bg-primary-light {
+      background-color: var(--clr-primary-100) !important;
+    }
+
+    .bg-light {
+      background-color: var(--clr-naturals-100) !important;
+    }
+      
+
+  }
+}
