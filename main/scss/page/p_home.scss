@@ -1,7 +1,7 @@
 @import "../base/mixins";
 
-.home_section1 {
-    padding-top: var(--spc-148);
+.section__1{
+//    padding-top: var(--spc-148);
     padding: var(--spc-148) 0;
     
     & div.img-cont{
@@ -13,7 +13,7 @@
             margin: 1rem;
         }
         
-        @include media-breakpoint-between(lg){
+        @include media-breakpoint-between(md){
             width: 100%;
             height: 260px;
         }
@@ -26,7 +26,7 @@
     
 }
 
-.home_section2 {
+.section__2{
     background-color: var(--clr-secondary-100);
     
     & div.img-cont{
@@ -74,7 +74,7 @@
     }
     
     & div.img-cont3{
-        height: 180px;
+        min-height: 240px;
         background: url("../images/solar-bg-img.jpg") no-repeat center center/cover;
         
         & img{
@@ -89,7 +89,7 @@
     
 }
 
-.home_section3 {
+.section__3 {
     background-color: var(--clr-secondary-100);
     
     & img{
@@ -101,7 +101,7 @@
     }
 }
 
-.home_section4 {
+.section__4 {
     padding: var(--spc-72) 0;
     
     & h2.title {
@@ -140,7 +140,7 @@
     }
 }
 
-.home_section5 {
+.section__5 {
     
     & div.img-cont {
         width: 299px;
@@ -155,14 +155,14 @@
 
 
 
-.home_section6 {
+.section__6 {
      
     & img.img-partners{
         width: 132px;
     }
 }
 
-.home_section7 {
+.section__7 {
     margin: 64px;
     background: url("../images/bg-img-2.jpg") no-repeat center center/cover;
     
@@ -170,7 +170,7 @@
         
         @include media-breakpoint-between(lg){
             width: 100%;
-            height: 60vh;
+            min-height: 100%;
             background: linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0,1));
             position: absolute;
             z-index: 1;
@@ -197,7 +197,7 @@
     }
 }
 
-.home_section8 {
+.section__8 {
     background: var(--clr-secondary-400);
     
     & h5 {
